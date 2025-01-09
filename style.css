@@ -1,0 +1,47 @@
+.main {
+    padding: 50px 100px;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.detailsSection {
+    display: flex; 
+    justify-content: space-around; 
+    border: 1px solid black; 
+    padding: 20px;
+}
+
+.detaillsCol {
+    display: flex; 
+    flex-direction: column; 
+    gap: 5px;
+}
+
+.inputGroup {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.section {
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+    margin-top: 10px;
+}
+
+.radioGroup {
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+.checkBoxGroup {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-evenly;
+}
+
+.dropdown {
+    width: 60%;
+}

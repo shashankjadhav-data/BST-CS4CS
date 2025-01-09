@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>Assignment</title>
+</head>
+
+<body class="main">
+    <h1 class="centerText">Welcome to my Homepage</h1>
+    <div class="detailsSection">
+        <div class="detaillsCol">
+            <div class="inputGroup">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" oninput="allowOnlyLetters(event)" />
+            </div>
+            <div class="inputGroup">
+                <label for="MiddleInitial">M Initial:</label>
+                <input type="text" name="MiddleInitial" id="MiddleInitial" oninput="allowOnlyLetters(event)" />
+            </div>
+            <div class="inputGroup">
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" oninput="allowOnlyLetters(event)" />
+            </div>
+            <div class="inputGroup">
+                <label for="fromOrigin">I am from:</label>
+                <select name="fromOrigin" id="fromOrigin" class="dropdown">
+                    <option value="" disabled selected>Select your country</option>
+                    <option value="India">India</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="Bhutan">Bhutan</option>
+                    <option value="Maldives">Maldives</option>
+                    <option value="China">China</option>
+                    <option value="Myanmar">Myanmar</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                </select>
+            </div>
+        </div>
+        <div class="detaillsCol">
+            <div class="inputGroup">
+                <label for="Matriculation">Matriculation:</label>
+                <input type="number" name="Matriculation" id="Matriculation" />
+            </div>
+            <div class="inputGroup">
+                <label for="Semester">Semester:</label>
+                <input type="text" name="Semester" id="Semester" />
+            </div>
+            <div class="inputGroup">
+                <label for="Program">Program:</label>
+                <select name="Program" id="Program" class="dropdown">
+                    <option value="" disabled selected>Select your program</option>
+                    <option value="BTech">B.Tech (Bachelor of Technology)</option>
+                    <option value="MTech">M.Tech (Master of Technology)</option>
+                    <option value="BA">BA (Bachelor of Arts)</option>
+                    <option value="BBA">BBA (Bachelor of Business Administration)</option>
+                    <option value="MBA">MBA (Master of Business Administration)</option>
+                    <option value="BCom">B.Com (Bachelor of Commerce)</option>
+                    <option value="MCom">M.Com (Master of Commerce)</option>
+                    <option value="BSc">B.Sc (Bachelor of Science)</option>
+                    <option value="MSc">M.Sc (Master of Science)</option>
+                    <option value="MBBS">MBBS (Bachelor of Medicine, Bachelor of Surgery)</option>
+                    <option value="BDS">BDS (Bachelor of Dental Surgery)</option>
+                    <option value="LLB">LLB (Bachelor of Law)</option>
+                    <option value="BCA">BCA (Bachelor of Computer Applications)</option>
+                    <option value="MCA">MCA (Master of Computer Applications)</option>
+                    <option value="BEd">B.Ed (Bachelor of Education)</option>
+                    <option value="PhD">Ph.D. (Doctor of Philosophy)</option>
+                </select>
+            </div>
+            <div class="inputGroup">
+                <label for="StartedIn">Started In: </label>
+                <input type="date" name="StartedIn" id="StartedIn" />
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        I have Heard about this graudation program from
+        <div class="checkBoxGroup">
+            <div><input type="checkbox" /> Media</div>
+            <div><input type="checkbox" /> Add</div>
+            <div><input type="checkbox" /> Agency</div>
+            <div><input type="checkbox" /> Other</div>
+        </div>
+    </div>
+    <div class="section">
+        When i finish my study i will
+        <div class="radioGroup">
+            <div><input type="radio" name="finishStudy" /> Return to my country</div>
+            <div><input type="radio" name="finishStudy" /> Find a job in Europe</div>
+            <div><input type="radio" name="finishStudy" /> Do the practical training and then decide</div>
+        </div>
+    </div>
+    <div class="section">
+        Feedback on the course
+        <textarea rows="10" cols="20" placeholder="Whats your Feedback?"></textarea>
+    </div>
+    <div class="section">
+        I will write a paragraph for each methodology of SDLC. There are many of them. My suggestion and reason are as
+        follows
+        <ol type="A">
+            <li>Waterfall: The Waterfall methodology is one of the earliest and most traditional SDLC approaches. It
+                follows a linear and sequential process where each phase—requirements gathering, design, implementation,
+                testing, deployment, and maintenance—is completed before moving to the next. This approach is ideal for
+                projects with well-defined requirements and minimal expected changes, as it emphasizes thorough
+                documentation and a structured process. The key advantage of the Waterfall model is its simplicity and
+                clear milestones, making it easy to manage and understand. However, its rigidity is a significant
+                drawback, as it doesn’t accommodate changes easily once a phase is completed. This methodology works
+                best for projects like construction or government software where the scope is fixed and predictable.
+            </li>
+            <li>Agile: Agile is a flexible and iterative SDLC methodology designed to adapt to changing requirements and
+                foster collaboration between cross-functional teams. It divides the project into small, manageable
+                iterations called sprints, typically lasting 1-4 weeks. Agile emphasizes continuous delivery of working
+                software, customer feedback, and collaboration over strict adherence to a predefined plan. Its main
+                advantages include increased adaptability, faster time to market, and higher customer satisfaction.
+                However, it may lead to scope creep if not managed effectively and requires significant involvement from
+                stakeholders. Agile is best suited for dynamic projects like app development or software startups where
+                requirements may evolve rapidly.</li>
+            <li>Incremental: The Incremental methodology divides the development process into smaller, manageable
+                modules called increments. Each increment builds on the previous one, gradually adding functionality
+                until the complete system is delivered. This approach allows teams to deliver functional software early
+                and make adjustments based on user feedback. Its main advantages are flexibility, faster delivery of
+                working software, and reduced project risks. However, it may result in integration challenges as
+                increments are combined. Incremental is best suited for projects where early delivery of critical
+                features is a priority, such as web or mobile app development.</li>
+        </ol>
+    </div>
+    <div class="section">
+        Among so many methodlogies the ones that are in the AGILE classification are better. Among Agile SDLC methods, I
+        also have a few suggestions
+        <ol type="A">
+            <li>Flexibility and Adaptability: Agile methodologies are highly adaptive to changing requirements, making
+                them ideal for projects where the scope is uncertain or evolves over time. Unlike rigid models like
+                Waterfall, Agile promotes iterative progress and allows teams to pivot based on customer feedback.</li>
+            <li>Continuous Delivery: Agile emphasizes delivering functional increments of the product frequently,
+                ensuring that stakeholders see tangible progress early and consistently. This leads to faster
+                time-to-market and reduces risks associated with delayed feedback.</li>
+            <li>Collaboration and Communication: Agile fosters close collaboration between cross-functional teams and
+                stakeholders. Practices like daily stand-ups, sprint planning, and retrospectives ensure continuous
+                communication, transparency, and alignment of goals.</li>
+            <li>Improved Customer Satisfaction: Agile methodologies prioritize customer feedback and involve
+                stakeholders throughout the development process, resulting in a final product that closely aligns with
+                user needs and expectations.</li>
+        </ol>
+    </div>
+    <div class="section">
+        In this software development and application course of SRH we learn the following
+        <ol type="a">
+            <li>Comprehensive SDLC Practices: The course covers the complete Software Development Life Cycle (SDLC),
+                enabling students to understand and apply various methodologies like Agile, Waterfall, and Scrum in
+                real-world projects. This knowledge prepares students to choose and implement the best-suited
+                methodology for different types of software applications.</li>
+            <li>Programming and Application Development: Students gain hands-on experience with programming languages,
+                tools, and frameworks required to design and develop robust software applications. The focus is on
+                building scalable, efficient, and user-friendly applications.</li>
+            <li>Problem-Solving and Analytical Skills: The course emphasizes critical thinking and analytical
+                problem-solving skills, enabling students to design software solutions that address specific business or
+                user needs.</li>
+            <li>Team Collaboration and Project Management: Through practical group projects, students learn how to work
+                collaboratively in teams, manage project timelines, and communicate effectively, ensuring smooth
+                development processes and successful project outcomes. </li>
+        </ol>
+    </div>
+    <div class="section">
+        I have used css in the webpage and there are 3 ways to include css in a webpage as follows
+        <ol type="a">
+            <li>Inline CSS: CSS is written directly within an HTML element using the style attribute. This method is
+                used for applying styles to a specific element, but it is not recommended for large projects due to poor
+                maintainability. </li>
+            <li>Internal CSS: CSS rules are defined within a &lt;style&gt; tag inside the &lt;head&gt; section of the
+                HTML document. This approach is useful when styling is specific to a single webpage. </li>
+            <li>External CSS: CSS is written in a separate .css file and linked to the HTML document using a
+                &lt;link&gt; tag in the &lt;head&gt; section. This method is ideal for reusability and maintainability
+                across multiple webpages. </li>
+        </ol>
+    </div>
+    <div class="section">
+        The reason CSS was used in the page are
+        <ol type="1">
+            <li>To Enhance Layout and Design: CSS allows precise control over the page layout, ensuring a visually
+                appealing design. In this webpage, features like padding, margins, flexbox, and borders help create a
+                well-structured form and organized content.</li>
+            <li>Improved User Experience: By using CSS for styling, elements such as input fields, labels, and buttons
+                are spaced and aligned properly, making the form easy to read and interact with. This enhances usability
+                and improves the overall user experience.</li>
+            <li>Consistency in Styling: CSS helps maintain consistent styling throughout the page, ensuring uniform
+                alignment, spacing, and colors. This creates a cohesive design for the webpage.</li>
+        </ol>
+    </div>
+    <div class="section">
+        We also use Javascript in webpage development. The main reasons are as follows
+        <ol type="1">
+            <li>Interactivity: JavaScript enables the creation of dynamic and interactive features like form validation,
+                dropdown menus, sliders, and modals. It enhances user engagement by allowing real-time updates and
+                interactions without requiring a page reload.</li>
+            <li>Client-Side Processing: JavaScript executes directly in the user’s browser, reducing server load and
+                improving performance. It handles tasks like input validation and data manipulation efficiently on the
+                client side, providing a smoother user experience</li>
+            <li>Integration with HTML and CSS: JavaScript works seamlessly with HTML and CSS, allowing developers to
+                manipulate DOM elements dynamically. This enables features such as showing/hiding elements, changing
+                styles, and updating content based on user actions.</li>
+            <li>Versatility and Extended Functionality: JavaScript supports libraries (like jQuery) and frameworks (like
+                React, Angular, and Vue), enabling the development of advanced web applications, animations, and
+                seamless user interfaces. It can also interact with APIs for data exchange, making it essential for
+                modern web development.</li>
+            <li>Cross-Browser Compatibility: JavaScript is supported by all modern web browsers, ensuring that
+                interactive features and dynamic content work consistently across different platforms and devices. This
+                makes it an essential tool for building accessible and user-friendly websites.</li>
+        </ol>
+    </div>
+    <div class="section">
+        I've done this project myself and accept the consequences if found other
+        <br />
+        <div>You can reach me at <input type="email" placeholder="email" value="" /></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
